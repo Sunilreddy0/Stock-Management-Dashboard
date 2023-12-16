@@ -12,7 +12,6 @@ code {
     monospace;
 }
 
-
 .login-page{
   background-color: #f4f4f4;
   display: flex;
@@ -169,7 +168,7 @@ nav a.active {
   text-align: justify;
 }
 
-.container h1{
+h1{
   text-align: center;
   color: #45a049;
   margin-bottom: 20px;
@@ -187,4 +186,61 @@ p{
 
 .heading{
   text-align: center;
+}
+
+.stock-list-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.stock-list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.stock-list {
+  flex: 1;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stock-item {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.chart-container {
+  flex: 1;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .stock-list-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stock-list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stock-item {
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  .chart-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.chart-container {
+  background-color: #f9f9f9;
+  border: 1px solid #1e1e1e;
 }

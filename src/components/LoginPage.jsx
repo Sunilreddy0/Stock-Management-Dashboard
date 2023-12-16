@@ -41,7 +41,7 @@ function LoginPage() {
     <Header/>
       <div className="login-page">
         <div className="login-container">
-          <h2>Login</h2>
+          <h1>Login</h1>
           <form className="login-form" onSubmit={handleSubmit}>
             <input
               type="text"
