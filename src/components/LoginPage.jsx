@@ -22,9 +22,6 @@ function LoginPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Username:", username);
-    console.log("Password:", password);
-
     login(username, password);
 
     setUsername("");
@@ -60,7 +57,7 @@ function LoginPage() {
               onChange={handlePasswordChange}
               required
             />
-            <button type="submit">
+            <button type="submit" id="login-button">
               Submit
             </button>
           </form>
